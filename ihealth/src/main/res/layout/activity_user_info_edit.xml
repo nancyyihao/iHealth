@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bupt.iheath.ui.UserInfoEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+                <com.bupt.iheath.widgets.CircleImageView
+                    android:id="@+id/img_head"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@mipmap/logo"
+                    app:border_width="2dp"
+                    app:border_color="@color/white"/>
+            </FrameLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/nickname"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="您的昵称"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="昵称"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/sex"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="您的性别（男或女）"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="性别"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/age"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="您的年龄"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="年龄"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/weight"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="您的体重(Kg)"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="体重"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signature"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:hint="请用一句话简要介绍自己（30字以内）"
+                android:maxLines="6"
+                android:minLines="3"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="个性签名"
+                app:met_maxCharacters="30" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

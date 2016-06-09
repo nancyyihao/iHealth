@@ -1,0 +1,44 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_title_contact">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="auto_call_switch"
+            android:summary="@string/pref_description_auto_call"
+            android:title="@string/pref_title_auto_call" />
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="@string/pref_default_display_phone"
+            android:dependency="auto_call_switch"
+            android:inputType="textCapWords"
+            android:key="emergency_cell_phone"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="@string/pref_default_display_phone"
+            android:title="@string/pref_title_display_phone" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_title_network">
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_upload_interval_list_titles"
+            android:entryValues="@array/pref_upload_interval_list_values"
+            android:key="upload_interval"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_upload_interval" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_title_other">
+        <Preference
+            android:title="@string/pref_about"
+            android:key="about" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

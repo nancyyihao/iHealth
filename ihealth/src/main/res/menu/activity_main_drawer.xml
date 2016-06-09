@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="功能">
+        <menu>
+            <item
+                android:id="@+id/nav_remind"
+                android:icon="@drawable/ic_remind"
+                android:title="提醒"/>
+            <item
+                android:id="@+id/nav_vibrate"
+                android:icon="@drawable/ic_vibration"
+                android:title="震动"/>
+            <item
+                android:id="@+id/nav_ring"
+                android:icon="@drawable/ic_ring"
+                android:title="手环信息"/>
+            <item
+                android:id="@+id/enable_step"
+                android:icon="@drawable/ic_walk"
+                android:title="开启步数通知"/>
+            <item
+                android:id="@+id/disable_step"
+                android:icon="@drawable/ic_clear"
+                android:title="关闭步数通知"/>
+            <item
+                android:id="@+id/analyze"
+                android:icon="@drawable/ic_analyze"
+                android:title="分析"/>
+        </menu>
+    </item>
+
+    <item android:title="应用">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="设置"/>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="注销登录"/>
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_to_app"
+                android:title="退出应用"/>
+        </menu>
+    </item>
+
+</menu>

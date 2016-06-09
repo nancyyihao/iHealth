@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bupt.iheath">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.base.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:label="@string/title_activity_register" />
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".ui.RemindActivity"
+            android:label="@string/title_activity_remind" />
+        <activity
+            android:name=".ui.AddRemindEventActivity"
+            android:label="@string/title_activity_add_remind_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.SupervisorInfoEditActivity"
+            android:label="@string/title_activity_supervisor_info_edit" />
+        <activity
+            android:name=".ui.UserInfoEditActivity"
+            android:label="@string/title_activity_user_info_edit" />
+        <activity
+            android:name=".ui.AnalyzeActivity"
+            android:label="@string/title_activity_analyze" />
+        <activity
+            android:name=".ui.Analyze2Activity"
+            android:label="@string/title_activity_analyze" />
+
+        <receiver android:name=".utils.AlarmReceiver" />
+
+        <activity
+            android:name=".ui.MonitorActivity"
+            android:label="@string/title_activity_monitor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.AboutActivity"></activity>
+    </application>
+
+</manifest>
