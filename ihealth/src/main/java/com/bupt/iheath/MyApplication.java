@@ -80,6 +80,7 @@ public class MyApplication extends Application {
     }
 
     private void initBmob() {
-        Bmob.initialize(this,"91d84c25d5f416573e9dfd881efbe79d");
+        // replace your own Bmob key here...
+        Bmob.initialize(this,"");
     }
 }
